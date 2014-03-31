@@ -10,6 +10,13 @@ app.io.route('ready', function(req) {
     })
 })
 
+app.io.route('yoha', function(req) {
+    req.io.room(req.data).broadcast('announce', {
+        message: 'Interval: ' + req.data + ' room. '
+    })
+})
+
+
 // Send the client html.
 app.get('/', function(req, res) {
     res.sendfile(__dirname + '/client.html')
