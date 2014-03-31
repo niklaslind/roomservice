@@ -1,0 +1,15 @@
+{
+    "name": "roomservice",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node roomservice.js"
+    },
+    "dependencies": {
+        "mocha": "*",
+        "express.io": "*"
+    },
+    "engines": {
+        "node": "0.10.x"
+    }
+}
